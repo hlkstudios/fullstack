@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Holiday - gifts",
+        "type": "long-term",
+        "t1": "1 month",
+        "t2": "2 month",
+        "t3": "3 month"
+    },
+    {
+        "name": "Birthday - gifts",
+        "type": "long-term",
+        "t1": "1 day",
+        "t2": "6 week",
+        "t3": "3 month"
+    },
+    {
+        "name": "Work",
+        "type": "short-term",
+        "t1": "1 day",
+        "t2": "2 day",
+        "t3": "4 day"
+    }
+]

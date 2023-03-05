@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Tech Blog</title>
+<link rel="stylesheet" href="/css/jass.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<style>
+
+</style>
+</head>
+
+<body>
+  <nav class="navbar justified bg-info">
+    <div class="">
+      <div class="float-left">
+        <a class="navbar-brand text-light p-3" href="/">
+          <h1 class="m-2"><i class="fa fa-microchip"></i>Tech Blog
+          </h1>
+        </a>
+      </div>
+    </div>
+    <div class="">
+      <div class="content-center float-right">
+        {{#if firstName}}
+        <H3 class="text-light fst-italic text-center">Welcome {{firstName}} </H3>
+        {{/if}}
+        <a id="home" class="navbar-brand text-light p-3 " href="/"><i class="m-1 fas fa-home"></i>Home</a>
+        <a id="dashboard" class="navbar-brand text-light p-3 " href="/dashboard"><i
+            class="m-1 fas fa-dashboard"></i>Dashboard</a>
+        {{#if loggedIn}}
+        <a id="logout" class="navbar-brand text-light p-3" href="/"><i
+            class="m-1 fas fa-right-from-bracket"></i></i>Sign Out</a>
+        {{ else }}
+        <a href="" id="login" class="navbar-brand text-light p-3" data-bs-toggle="modal" data-bs-target="#loginModal"><i
+            class="m-1 fas fa-right-to-bracket"></i></i>Sign In</a>
+        {{/if}}
+      </div>
+    </div>
+
+  </nav>
+  {{{ body }}}
+  {{> login-modal}}
+
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{else}}
+  <script src="/js/login.js"></script>
+  {{/if}}
+
+  <link rel="stylesheet" href="/css/globals.css">
+  <link rel="stylesheet" href="/css/landing.css">
+  <link rel="stylesheet" href="/css/styleguide.css">
+  <style>
+    .text-6{
+      margin-top: 50px;
+    }
+  </style>
+
+ <center>
+   <div class="team">
+    <div class="headline-subhead-6 headline-subhead">
+      <div class="meet-our-team-1 poppins-bold-black-38px">Meet our team</div>
+      <p class="get-to-know-the-face-1 body-m">
+        Get to know the faces behind the scenes and learn about the values that
+        drive us.
+      </p>
+    </div>
+    <div class="cards-row-2 cards-row">
+      <article class="card-8 card">
+        <img class="profile-image-placeholder-1" src="img/profile-1.png" alt="Profile Image Placeholder 1" width="320px"
+          style="margin: -31px" />
+        <div class="text-6 text">
+          <div class="john-doe-2 john-doe display-xs">Sarah K.</div>
+          <div class="lead-designer-1 body-m">UX Designer</div>
+        </div>
+        <div class="social-links">
+          <a href="" target="_blank"><img class="social-icons" src="img/social-icons-29.svg"
+              alt="Social Icons" /></a><a href="" target="_blank"><img class="social-icons"
+              src="img/github-mark.svg" alt="Social Icons" /></a><a href=""
+            target="_blank"><img class="social-icons" src="img/social-icons-31.svg" alt="Social Icons" /></a>
+        </div>
+      </article>
+      <article class="card-8 card">
+        <img class="profile-image-placeholder-1" src="img/profile-2.png" alt="Profile Image Placeholder 1" width="320px"
+          style="margin: -31px" />
+        <div class="text-6 text">
+          <div class="john-doe-3 john-doe display-xs">Michael L.</div>
+          <div class="lead-designer-1 body-m">Lead Designer</div>
+        </div>
+        <div class="social-links">
+          <a href="" target="_blank"><img class="social-icons" src="img/social-icons-29.svg"
+              alt="Social Icons" /></a><a href="" target="_blank"><img class="social-icons"
+              src="img/github-mark.svg" alt="Social Icons" /></a><a href=""
+            target="_blank"><img class="social-icons" src="img/social-icons-31.svg" alt="Social Icons" /></a>
+        </div>
+      </article>
+      <article class="card-8 card">
+        <img class="profile-image-placeholder-1-3 profile-image-placeholder-1" src="img/profile-3.png"
+          alt="Profile Image Placeholder 1" width="320px" style="margin: -31px" />
+        <div class="text-6 text">
+          <div class="john-doe-2 john-doe display-xs">Lauren M.</div>
+          <div class="lead-designer-1 body-m ">Product Designer</div>
+        </div>
+        <div class="social-links">
+          <a href="" target="_blank"><img class="social-icons" src="img/social-icons-29.svg"
+              alt="Social Icons" /></a>
+          <a href="" target="_blank"><img class="social-icons"
+              src="img/github-mark.svg" alt="Social Icons" /></a>
+          <a href=""
+            target="_blank"><img class="social-icons" src="img/social-icons-31.svg" alt="Social Icons" /></a>
+        </div>
+      </article>
+    </div>
+  </div>
+ </center>
+
+
+    <div class="contact-form contact" style="margin: 0 auto;">
+      <div class="contact-form-1">
+        <div class="header header-2">
+          <div class="headline-subhead">
+            <h1 class="lets-get-in-touch poppins-bold-heavy-metal-38px">Let’s get in touch!</h1>
+            <p class="got-questions-about body-m">
+              Got questions about the Landing Page UI Kit? Our team is here to help. Contact us for quick and friendly
+              support.
+            </p>
+          </div>
+        </div>
+        <div class="header-1 header-2">
+          <div class="contact-details contact" style="display: flex; flex-direction: row;">
+            <div class="contact-details-item">
+              <div class="contact-details-item-item">
+                <img class="icon" src="img/phonecall-1.svg" alt="icon-call" />
+                <div class="text-1 body-m">+012 345 6789</div>
+              </div>
+              <div class="contact-details-item-item">
+                <img class="icon" src="img/envelopesimple-2.svg" alt="icon-mail" />
+                <div class="helloanimaappcom body-m">Hello@animaapp.com</div>
+              </div>
+            </div>
+            <div class="contact-details-item">
+              <div class="connect-with-us display-xs">Connect with us</div>
+              <div class="social-links">
+                <a href="" target="_blank"
+                  ><img class="social-icons" src="img/social-icons-29.svg" alt="Social Icons" /> </a
+                ><a href="https://www.behance.net/Anima_design" target="_blank"
+                  ><img class="social-icons" src="img/github-mark.svg" alt="Social Icons" /> </a
+                ><a href="" target="_blank"
+                  ><img class="social-icons" src="img/social-icons-31.svg" alt="Social Icons" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <form action="/send-email" method="post" class="contact-form">
+              <div class="input-fields-button" style="margin-left: 450px;">
+            <div class="input-fields input">
+              <article class="input-field input">
+                <div class="icon-1">
+                  <img class="icon-2" src="img/user-1.svg" alt="icon-user" />
+                  <div class="divider"></div>
+                </div>
+                <input class="full-name body-m" name="fullname" placeholder="Full Name" type="text" required />
+              </article>
+              <article class="input-field input">
+                <div class="icon-1">
+                  <img class="icon-2" src="img/envelopesimple-3.svg" alt="icon-mail" />
+                  <div class="divider"></div>
+                </div>
+                <input class="email body-m" name="email" placeholder="Email" type="email" required />
+              </article>
+            </div>
+            <button type="submit" style="border: none;" action="/send-email" onclick="submitForm()">
+              <a
+              href=""
+              target=""
+            >
+              <div class="button"><div class="label poppins-semi-bold-white-16px" onclick="contactForm()">Submit</div></div></a
+            >
+            </button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-1">
+      <p class="x2023-anima-landing-page-ui-kit-1 body-s">
+        © 2023 Anima’s Landing Page Ui Kit.
+      </p>
+      <div class="social-links">
+        <a href="" target="_blank"><img class="social-icons" src="img/social-icons-29.svg"
+            alt="Social Icons" /></a>
+        <a href="" target="_blank">
+          <div class="social-icons-3 social-icons">
+            <img class="vector-1" src="img/vector-1.svg" alt="Vector" />
+          </div>
+        </a>
+        <a href="" target="_blank"><img class="social-icons"
+            src="img/social-icons-31.svg" alt="Social Icons" /></a>
+      </div>
+    </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+:root { 
+  --accent---mandys-pink: #f2bfaf;
+  --accent---persimmon: #ff6250;
+  --black: #000000;
+  --bright-gray: #374151;
+  --celeste: #cfcfcf;
+  --cta---aqua-squeeze: #e5f4f2;
+  --cta---observatory: #009379;
+  --mirage: #111827;
+  --neutral---alto: #d7d7d7;
+  --neutral---mine-shaft: #2d2d2d;
+  --neutral---zircon: #f8f9ff;
+  --white: #ffffff;
+ 
+  --font-size-l: 21px;
+  --font-size-m: 16px;
+  --font-size-s: 14px;
+  --font-size-xl: 28px;
+  --font-size-xxl: 38px;
+  --font-size-xxxl: 50px;
+  --font-size-xxxxl: 67px;
+ 
+  --font-family-mulish: "Mulish", Helvetica;
+  --font-family-poppins: "Poppins", Helvetica;
+}
+.display-xs {
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.body-l {
+  font-family: var(--font-family-mulish);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.body-m {
+  font-family: var(--font-family-mulish);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.body-s {
+  font-family: var(--font-family-mulish);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.poppins-semi-bold-gossamer-16px {
+  color: var(--cta---observatory);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.mulish-bold-heavy-metal-16px {
+  color: var(--neutral---mine-shaft);
+  font-family: var(--font-family-mulish);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.poppins-semi-bold-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.poppins-bold-black-38px {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.poppins-bold-heavy-metal-38px {
+  color: var(--neutral---mine-shaft);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.poppins-bold-heavy-metal-50px {
+  color: var(--neutral---mine-shaft);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.mulish-bold-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-mulish);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.poppins-semi-bold-heavy-metal-28px {
+  color: var(--neutral---mine-shaft);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 600;
+}
